@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Página Mágica</title>
+    <meta name="description" content="Livraria Página Mágica oferece uma grande variedade de livros em diferentes categorias, com uma experiência de compra fácil e rápida.">
+    <meta name="keywords" content="livros, ficção, policial, suspense, comprar livros online">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Book_Logo.svg" alt="Logo da Livraria Página Mágica">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#empresa">Sobre a Empresa</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#comunicacao">Contato</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sobre a Empresa -->
+    <section id="empresa">
+        <h1>Bem-vindo à Livraria Página Mágica</h1>
+        <p>Fundada em 2010, a Livraria Página Mágica tem como missão oferecer uma experiência única de leitura. Com uma seleção diversificada de livros, nossa equipe é apaixonada por literatura e está sempre pronta para ajudar você a encontrar o próximo grande título.</p>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="linha-produto">
+            <h3>Ficção</h3>
+            <ul>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=O+Hobbit" alt="O Hobbit"><br>O Hobbit</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=1984" alt="1984"><br>1984</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=A+Menina+que+Roubava+Livros" alt="A Menina que Roubava Livros"><br>A Menina que Roubava Livros</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=O+Senhor+dos+Anéis" alt="O Senhor dos Anéis"><br>O Senhor dos Anéis</li>
+            </ul>
+        </div>
+        <div class="linha-produto">
+            <h3>Policial</h3>
+            <ul>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=Sherlock+Holmes" alt="Sherlock Holmes"><br>Sherlock Holmes</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=A+Garota+no+Trem" alt="A Garota no Trem"><br>A Garota no Trem</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=O+Silêncio+dos+Inocentes" alt="O Silêncio dos Inocentes"><br>O Silêncio dos Inocentes</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=O+Colecionador+de+Ossos" alt="O Colecionador de Ossos"><br>O Colecionador de Ossos</li>
+            </ul>
+        </div>
+        <div class="linha-produto">
+            <h3>Suspense</h3>
+            <ul>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=O+Código+Da+Vinci" alt="O Código Da Vinci"><br>O Código Da Vinci</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=Garota+Exemplar" alt="Garota Exemplar"><br>Garota Exemplar</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=A+Verdade+Sobre+o+Caso+Harry+Quebert" alt="A Verdade Sobre o Caso Harry Quebert"><br>A Verdade Sobre o Caso Harry Quebert</li>
+                <li><img src="https://via.placeholder.com/150x200/800080/FFFFFF?text=O+Menino+do+Pijama+Listrado" alt="O Menino do Pijama Listrado"><br>O Menino do Pijama Listrado</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Comunicação -->
+    <section id="comunicacao">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div>
+            <p><strong>Como posso comprar um livro?</strong><br>Você pode comprar diretamente pelo nosso site, escolhendo o livro e seguindo os passos no carrinho de compras.</p>
+            <p><strong>Quais são as formas de pagamento?</strong><br>Aceitamos cartões de crédito, débito, e pagamentos via boleto bancário.</p>
+            <p><strong>Como funciona o frete?</strong><br>O frete é calculado no momento da compra, dependendo da sua localização.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Livraria Página Mágica - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Adicionando o Lazy Loading para imagens -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(image => {
+                image.loading = 'lazy';
+            });
+        });
+    </script>
+</body>
+</html>
